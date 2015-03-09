@@ -1,0 +1,23 @@
+{
+  "name": "TodoMVC",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browserify": "^9.0.3",
+    "flux": "^2.0.1",
+    "react": "^0.13.0-rc2",
+    "reactify": "^1.0.0"
+  },
+  "scripts": {
+    "build": "browserify src/app.js -o public/js/app.js"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  },
+  "keywords": [],
+  "author": "\"Vinh\"",
+  "license": "ISC"
+}
